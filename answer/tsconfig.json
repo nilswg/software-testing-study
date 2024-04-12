@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    /* Type Checking */
+    "strict": false,                                      /* Enable all strict type-checking options. */
+    "strictNullChecks": false,                         /* When type checking, take into account 'null' and 'undefined'. */
+    "strictFunctionTypes": false,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+  },
+  "include":["chapters/**/src/*", "chapters/**/__test__/*"],
+  "exclude":["node_modules", "chapters/**/node_modules"]
+}
+// 如果沒有 ts 檔案，紅字是正常的，將 src 或 __tests__ 中的檔案改為 ts 檔案即可正常運作
